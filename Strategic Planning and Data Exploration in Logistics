@@ -1,0 +1,33 @@
+# Logistics Data Analyst Internship — Week 1
+
+**Task:** Strategic Planning and Data Exploration in Logistics
+
+This repository accompanies the Week 1 strategic planning report submitted for
+the Logistics Data Analyst Internship. It contains the illustrative Python
+pipeline referenced in Section 8 of the report (data cleaning, exploratory
+analysis, a delivery-time regression model, and route clustering).
+
+## Scenario
+A mid-size e-commerce retailer operating three regional warehouses is
+experiencing rising transportation costs, late deliveries during peak
+weekday afternoons, and inconsistent stock availability. This project uses
+historical order, inventory, and delivery data to diagnose the causes and
+recommend data-driven improvements.
+
+## Files
+- `analysis_pipeline.py` — data cleaning, EDA, regression model, and clustering
+- `requirements.txt` — Python dependencies
+- `Week1_Logistics_Strategic_Planning_Report.docx` — full written report
+
+## How to run
+```bash
+pip install -r requirements.txt
+python analysis_pipeline.py
+```
+(Expects `orders.csv` and `deliveries.csv` with order/delivery fields such as
+`order_id`, `warehouse_id`, `destination_zip`, `delivery_time_hrs`,
+`promised_time_hrs`, `day_of_week`, `distance_km`, `order_volume`.)
+
+## Status
+Week 1 deliverable — planning and pseudocode stage. Weeks 2–4 will apply this
+pipeline to a real cleaned dataset.
